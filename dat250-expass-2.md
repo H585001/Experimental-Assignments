@@ -6,10 +6,10 @@ Link to GitHub repo [here!](https://github.com/H585001/Experiment-2)
 
 
 
-## Screenshots of database schemas
-List of tables:
+## Screenshots of database schemas  
+List of tables:  
 ![image](https://user-images.githubusercontent.com/54100104/190664409-cbe0577f-7423-4e25-bc83-a0388810a989.png)
-
+  
 ![image](https://user-images.githubusercontent.com/54100104/190663854-9ad0fcae-ab0e-46e4-a678-62a7386e6f66.png)
 
 ![image](https://user-images.githubusercontent.com/54100104/190664009-9d61e7eb-dbc1-4182-a83f-275971d4c2bb.png)
