@@ -2,7 +2,7 @@
 
 No issues were encountered in the process of installing other than some confusion related to using derby ij properly through command line.
 
-Link to git hub repo [here!](https://github.com/H585001/Experiment-2)
+Link to GitHub repo [here!](https://github.com/H585001/Experiment-2)
 
 
 
