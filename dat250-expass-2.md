@@ -1,5 +1,11 @@
 # Experimental Assignment 2
 
+No issues were encountered in the process of installing other than some confusion related to using derby ij properly through command line.
+
+Link to git hub repo [here!](https://github.com/H585001/Experiment-2)
+
+
+
 ## Screenshots of database schemas
 List of tables:
 ![image](https://user-images.githubusercontent.com/54100104/190664409-cbe0577f-7423-4e25-bc83-a0388810a989.png)
