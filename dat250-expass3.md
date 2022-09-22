@@ -1,4 +1,8 @@
 # Experimental Assignment 3: MongoDB
+
+## Validation of installation package
+![image](https://user-images.githubusercontent.com/54100104/191832606-7cf506b7-eead-4283-8c30-629fdc39a8fd.png)
+
 ## Experiment 1: CRUD Operations
 These tasks were conducted in powershell, as running mongo.exe did not support any copy and paste actions. 
 
@@ -85,5 +89,7 @@ Query Results
 ```
 db.map_reduce_custom.find().sort( { value: -1 } )
 ```
-Final Result:
+Final Result:   
 ![image](https://user-images.githubusercontent.com/54100104/191828924-3222bd72-7cfd-45c1-bc14-05d39caeaed6.png)
+
+The operation above could be very useful for analytics purposes to see days with high sales values. Perhaps an employee deserves a raise, or does he deserve the boot?
