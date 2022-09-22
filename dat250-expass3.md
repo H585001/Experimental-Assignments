@@ -68,20 +68,22 @@ var mapFunctionSalesByDate = function() {
 };
 ```
 Reduce Function:
-```
-var reduceFunction1 = function(date, price) {
+```js
+var reduceFunctionSalesByDate = function(date, price) {
    return Array.sum(price);
 };
 ```
 Perform Map-Reduce on all documents
-```
+```js
 db.orders.mapReduce(
-   mapFunction1,
-   reduceFunction1,
+   mapFunctionSalesByDate,
+   reduceFunctionSalesByDate,
    { out: "map_reduce_custom" }
 )
 ```
 Query Results
 ```
-db.map_reduce_custom.find().sort( { _id: 1 } )
+db.map_reduce_custom.find().sort( { value: -1 } )
 ```
+Final Result:
+![image](https://user-images.githubusercontent.com/54100104/191828924-3222bd72-7cfd-45c1-bc14-05d39caeaed6.png)
