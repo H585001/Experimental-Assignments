@@ -50,4 +50,38 @@ The result is the following:
 ---
 ## Experiment 2: Aggregation
 
+### 2.1 Return the Total Price Per Customer
+Before Map-Reduce
+![image](https://user-images.githubusercontent.com/54100104/191822989-1dc6cba7-6fba-4e1e-bc4e-02d1a47ce402.png)
+After Map-Reduce
+![image](https://user-images.githubusercontent.com/54100104/191822707-fcc22cd8-e3dd-4c70-85b8-55b4fcec7916.png)
 
+### 2.2 Calculate Order and Total Quantity with Average Quantity Per Item
+After Map-Reduce
+![image](https://user-images.githubusercontent.com/54100104/191823485-86bb1f7b-ef25-4903-8d70-a25493f74848.png)
+
+### 2.3 Custom Operation: Order dates by total sales
+Map Function:
+```js
+var mapFunctionSalesByDate = function() {
+   emit(this.ord_date, this.price);
+};
+```
+Reduce Function:
+```
+var reduceFunction1 = function(date, price) {
+   return Array.sum(price);
+};
+```
+Perform Map-Reduce on all documents
+```
+db.orders.mapReduce(
+   mapFunction1,
+   reduceFunction1,
+   { out: "map_reduce_custom" }
+)
+```
+Query Results
+```
+db.map_reduce_custom.find().sort( { _id: 1 } )
+```
