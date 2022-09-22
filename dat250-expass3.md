@@ -15,4 +15,29 @@ db.inventory.find( { status: { $in: [ "A", "D" ] } } )
 ```
 ![image](https://user-images.githubusercontent.com/54100104/191809475-b3560d6f-2532-446d-91a3-bcb0a9731d7f.png)
 
+### 3. Updating documents
+The following commands updates the size.uom field, and status
+```
+db.inventory.updateMany(
+   { "qty": { $lt: 50 } },
+   {
+     $set: { "size.uom": "in", status: "P" },
+     $currentDate: { lastModified: true }
+   }
+)
+```
+By showing all items, we see that all items with qty < 50 have size.oum = in
+![image](https://user-images.githubusercontent.com/54100104/191811185-fe302832-b74b-4286-b661-7452ad56ac16.png)
 
+### 4. Deleting documents
+The following command deletes all items with status = A
+```
+db.inventory.deleteMany({ status : "A" })
+```
+We get returned amount of items deleted
+![image](https://user-images.githubusercontent.com/54100104/191811521-906be6b9-b159-4db2-8a5d-1e60ccd6f7d4.png)
+
+When inspecting we see that there are no more items with status = A
+![image](https://user-images.githubusercontent.com/54100104/191811801-b0b73d0b-3b17-4594-90d3-5f013b9203ac.png)
+
+### 5. Bulk-write operations
