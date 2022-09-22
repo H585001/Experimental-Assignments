@@ -41,3 +41,11 @@ When inspecting we see that there are no more items with status = A
 ![image](https://user-images.githubusercontent.com/54100104/191811801-b0b73d0b-3b17-4594-90d3-5f013b9203ac.png)
 
 ### 5. Bulk-write operations
+Writing the following command results in multiple operations being executed.
+![image](https://user-images.githubusercontent.com/54100104/191813635-0ff67513-de61-481a-b6c4-ab8528466503.png)   
+Since the optional order variable is not set to false, the operations are executed in order.   
+The result is the following:   
+![image](https://user-images.githubusercontent.com/54100104/191813980-c6635133-df35-4b8f-a036-c0f433de535c.png)
+
+
+
