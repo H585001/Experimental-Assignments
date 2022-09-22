@@ -47,5 +47,6 @@ Since the optional order variable is not set to false, the operations are execut
 The result is the following:   
 ![image](https://user-images.githubusercontent.com/54100104/191813980-c6635133-df35-4b8f-a036-c0f433de535c.png)
 
+## Experiment 2: Aggregation
 
 
