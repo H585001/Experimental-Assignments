@@ -1,7 +1,10 @@
 # Experimental Assignment 4
 
+## Link to Repository
+https://github.com/H585001/dat250-sparkjava-counter
+
 ## Issues
-I encountered a couple problems with the Java program. I struggled to get the ID added to the post requests. For some reason it didnt seem like it worked in the constructor as imagined.
+I encountered a couple problems with the Java program. I struggled to get the ID added to the post requests. I did not realize that Gson did not use the constructors.
 Since i have 4 oblig this week i couldnt finish by friday, but it is fixed now!
 
 ## Rest API for TODO Items
