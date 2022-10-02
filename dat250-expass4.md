@@ -30,7 +30,7 @@ get("/todos/:id", (req, res) -> {
 });
 ```
 ### Post Mapping
-```
+```java
 post("/todos", (req, res) -> {
 	Todo todo = new Gson().fromJson(req.body(), Todo.class);
 	todo.setId(Long.valueOf(todos.size()));
@@ -39,7 +39,7 @@ post("/todos", (req, res) -> {
 });
 ```
 ### PUT Mapping
-```
+```java
 put("/todos/:id", (req, res) -> {
 
 	try {
@@ -60,7 +60,7 @@ put("/todos/:id", (req, res) -> {
 	});
 ```
 ### DELETE Mapping
-```
+```java
 delete("/todos/:id", (req, res) -> {
 	try {
 		Long id = Long.parseLong(req.params(":id"));
