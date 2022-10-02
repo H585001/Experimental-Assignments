@@ -5,7 +5,7 @@ I encountered a couple problems with the Java program. I struggled to get the ID
 Since i have 4 oblig this week i couldnt finish by friday, but it is fixed now!
 
 ## Rest API for TODO Items
-### Get Mappings
+### GET Mappings
 ```java
 get("/todos", (req, res) -> {
 			if (todos.size() == 1)
@@ -29,7 +29,7 @@ get("/todos/:id", (req, res) -> {
 	}
 });
 ```
-### Post Mapping
+### POST Mapping
 ```java
 post("/todos", (req, res) -> {
 	Todo todo = new Gson().fromJson(req.body(), Todo.class);
